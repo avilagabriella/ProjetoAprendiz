@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --color-primary: #c4deffa6; /* Azul claro */
+  --color-secondary: #3293d3; /* Azul escuro */
+  --color-tertiary: #000000; /* preto */
+  --color-quaternary: #27ae60; /* Verde */
+  --color-quinary: #ece7e7; /* meio branco */
+  --color-borda: #555555; /* Cinza  */
+}
+
+body {
+  background-color: var(--color-quinary);
+  color: var(--color-primary);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}   
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  text-align: center;
+  height: 15vh;
+  background-color: var(--color-primary);
+  color: var(--color-quinary);
+  padding: 20px;
+}
+
+.head {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 610px;
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  color: var(--color-secondary);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  color: var(--color-tertiary);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+}
+
+h4 {
+  color: var(--color-quinary);
+  font-size: 1rem;
+}
+
+button {
+  background-color: var(--color-secondary);
+  color: var(--color-quinary);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--color-tertiary);
+}
+
+#formLogin, #formRegistro {
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  max-height: 300px;
+  border: 1px solid var(--color-borda);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-quinary);
+  padding: 1rem;
+}
+
+#formLogin input, #formRegistro input {
+  width: 70%;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  border: 1px solid var(--color-borda);
+  border-radius: 5px;
+}
+
+.faixa {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-tertiary);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.tabela {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 110px;
+}
+
+.tabela button {
+  align-self: flex-end;
+}
+
+.tabela h3 {
+  align-self: flex-start;
+  font-size: medium;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tabela table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela table th {
+  text-align: center;
+  padding: 0.5rem;
+  background-color: var(--color-primary);
+  color: var(--color-quinary);
+}
+
+.tabela table td {
+  border-top: 1px solid var(--color-borda);
+  border-bottom: 1px solid var(--color-borda);
+  padding: 0.5rem;
+}
+
+.bexcluir {
+  background-color: var(--color-tertiary);
+  color: var(--color-quinary);
+}
+
+.bvisualizar {
+  background-color: var(--color-quaternary);
+  color: var(--color-primary);
+}
+
+.cabecalho {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.janela {
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  max-height: 300px;
+  background-color: var(--color-quinary);
+  border: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.janela form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.janela form input {
+  width: 100%;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  border: 1px solid var(--color-borda);
+  border-radius: 5px;
+}
+
+.oculto {
+  display: none;
+}
+
